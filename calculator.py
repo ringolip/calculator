@@ -4,6 +4,7 @@ import tkinter as tk
 import tkinter.messagebox as mb
 
 number = 0
+number_list = list()
 calculate_number = list()
 method = []
 
@@ -33,52 +34,122 @@ frame.pack()
 def zero():
     global number
     number = 0
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def one():
     global number
     number = 1
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def two():
     global number
     number = 2
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def three():
     global number
     number = 3
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def four():
     global number
     number = 4
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def five():
     global number
     number = 5
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def six():
     global number
     number = 6
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def seven():
     global number
     number = 7
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def eight():
     global number
     number = 8
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 def nine():
     global number
     number = 9
-    v.set(number)
+    number_list.append(number)
+    reverse_number_list = list(reversed(number_list))
+    multi = 1
+    display_number = 0
+    for i in reverse_number_list:
+        display_number = multi * i + display_number
+        multi = multi*10
+    v.set(display_number)
 
 # 运算函数
 def mul():
