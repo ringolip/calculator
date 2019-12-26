@@ -197,6 +197,7 @@ def clear():
     global number
     number = 0
     v.set(number)
+    number_list.clear()
     calculate_number.clear()
     method.clear()
 
